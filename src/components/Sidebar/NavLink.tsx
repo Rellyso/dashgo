@@ -1,6 +1,5 @@
-import { LinkProps as ChakraLinkProps } from "@chakra-ui/react";
+import { LinkProps as ChakraLinkProps, Link as ChakraLink, Text } from "@chakra-ui/react";
 import Icon from "@chakra-ui/icon";
-import { Link as ChakraLink, Text } from "@chakra-ui/layout";
 import { ElementType } from "react";
 import { ActiveLink } from "../ActiveLink";
 interface NavLinkProps extends ChakraLinkProps {
