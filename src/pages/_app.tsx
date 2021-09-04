@@ -5,13 +5,12 @@ import { theme } from '../styles/theme'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { SidebarDrawerProvider } from '../contexts/SidebarDrawerContext'
 import { makeServer } from '../services/mirage'
-import { QueryClient, QueryClientProvider } from 'react-query'
+import { QueryClientProvider } from 'react-query'
+import { clientQuery } from '../services/queryClient'
 
 if (process.env.NODE_ENV === 'development') {
   makeServer()
 }
-
-const clientQuery = new QueryClient();
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
