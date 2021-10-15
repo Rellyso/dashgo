@@ -142,12 +142,12 @@ export default function UserList({ users }: UserListProps) {
   )
 }
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   const { users } = await getUsers(1);
+export const getServerSideProps: GetServerSideProps = async () => {
+  const { users } = await getUsers(1);
 
-//   return {
-//     props: {
-//       users,
-//     }
-//   }
-// }
+  return {
+    props: {
+      users,
+    }
+  }
+}
